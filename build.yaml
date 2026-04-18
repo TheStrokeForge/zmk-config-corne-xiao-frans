@@ -8,5 +8,5 @@ include:
 
   # Right side (Peripheral)
   - board: xiao_ble
-    shield: corne_xiao_v2_right rgbled_adapter
+    shield: corne_xiao_v2_right
     artifact-name: corne_xiao_v2_right_rgb
