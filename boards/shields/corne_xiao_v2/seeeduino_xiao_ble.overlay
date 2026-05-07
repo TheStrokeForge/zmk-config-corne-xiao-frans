@@ -1,0 +1,12 @@
+/*
+ * Board-specific overlay for seeeduino_xiao_ble:
+ * Maps the board's led0/led1/led2 nodes to the led-red/led-green/led-blue
+ * aliases required by zmk-rgbled-widget.
+ */
+/ {
+    aliases {
+        led-red   = &led0;
+        led-green = &led1;
+        led-blue  = &led2;
+    };
+};
