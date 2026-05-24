@@ -1,6 +1,6 @@
 file_format: "2"
-id: corne
-name: Corne
+id: corne_xiao_v2
+name: Corne Xiao V2
 type: shield
 url: https://github.com/friction07/corne-xiao 
 requires: [seeeduino_xiao_ble]
