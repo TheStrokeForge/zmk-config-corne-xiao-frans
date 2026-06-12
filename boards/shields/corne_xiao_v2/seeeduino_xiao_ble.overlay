@@ -15,3 +15,7 @@
     nfct-pins-as-gpios;
 };
 
+&uart0 {
+    status = "disabled";
+};
+
