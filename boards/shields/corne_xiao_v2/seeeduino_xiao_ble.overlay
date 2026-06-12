@@ -10,3 +10,8 @@
         led-blue  = &led2;
     };
 };
+
+&uicr {
+    nfct-pins-as-gpios;
+};
+
