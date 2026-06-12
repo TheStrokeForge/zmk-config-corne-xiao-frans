@@ -1,13 +1,19 @@
 /*
  * Board-specific overlay for seeeduino_xiao_ble:
  * Maps the board's led0/led1/led2 nodes to the led-red/led-green/led-blue
- * aliases required by zmk-rgbled-widget.
+ * aliases required by zmk-rgbled-widget, disables uart0 to free pin D7 (P1.12)
+ * for the matrix, and enables NFC pins as GPIOs.
  */
 / {
     aliases {
         led-red   = &led0;
         led-green = &led1;
         led-blue  = &led2;
+    };
+
+    chosen {
+        /delete-property/ zephyr,console;
+        /delete-property/ zephyr,shell-uart;
     };
 };
 
@@ -18,4 +24,3 @@
 &uart0 {
     status = "disabled";
 };
-
