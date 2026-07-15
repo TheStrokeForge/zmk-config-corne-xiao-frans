@@ -22,7 +22,7 @@
             display-name = "base";
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp C_NEXT C_PREV>;
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
 
             // -------------------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |                    |  Y  |  U   |  I  |  O  |  P  | BKSP |
